@@ -36,7 +36,10 @@ export default function App() {
   return (
     //Container
     <View style={styles.screen}>
-      <Button title="Add to Checklist" onPress={toggleModal} />
+      <Button
+        title="Add to Checklist"
+        onPress={toggleModal}
+      />
       {/* Input Area*/}
       <ListInput modalVisibility={isAddMode} toggleModal={toggleModal} handleSubmit={handleAddGoalClick} />
       {/* Display Goals */}

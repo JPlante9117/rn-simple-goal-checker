@@ -27,6 +27,7 @@ const ListInput = props => {
                             disabled={enteredGoal === "" ? true : false}
                             title="add"
                             onPress={() => handleGoalSubmission(enteredGoal)}
+                            style={styles.button}
                         />
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.button}>

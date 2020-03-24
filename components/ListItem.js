@@ -18,11 +18,13 @@ const styles = StyleSheet.create({
     listItem: {
         padding: 10,
         marginVertical: 10,
+        borderRadius: 10,
         backgroundColor: '#b3d9ff',
     },
     listItemComplete: {
         padding: 10,
         marginVertical: 10,
+        borderRadius: 10,
         backgroundColor: '#b3ffcc',
     },
     strikethrough: {
