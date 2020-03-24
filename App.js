@@ -10,7 +10,9 @@ export default function App() {
   const [isAddMode, setIsAddMode] = useState(false)
 
   const handleAddGoalClick = (inputText) => {
-    setGoals(currentGoals => [...currentGoals, { id: Math.random().toString(), value: inputText, completed: false }])
+    if (inputText !== ""){
+      setGoals(currentGoals => [...currentGoals, { id: Math.random().toString(), value: inputText, completed: false }])
+    }
   }
 
   const handleCompleteToggle = (goal) => {
@@ -47,7 +49,7 @@ export default function App() {
             )
           }
       } />
-      {checkedOffGoals.length > 0 ? <View style={{borderBottomWidth: 1, borderBottomColor: 'black'}} /> : null }
+      {checkedOffGoals.length > 0 && goals.length > 0 ? <View style={{borderBottomWidth: 1, borderBottomColor: 'black'}} /> : null }
       <FlatList
         keyExtractor={(item, index) => item.id}
         data={checkedOffGoals}

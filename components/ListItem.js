@@ -19,15 +19,11 @@ const styles = StyleSheet.create({
         padding: 10,
         marginVertical: 10,
         backgroundColor: '#b3d9ff',
-        borderColor: 'black',
-        borderWidth: 2
     },
     listItemComplete: {
         padding: 10,
         marginVertical: 10,
         backgroundColor: '#b3ffcc',
-        borderColor: 'black',
-        borderWidth: 2
     },
     strikethrough: {
         textDecorationLine: 'line-through'
